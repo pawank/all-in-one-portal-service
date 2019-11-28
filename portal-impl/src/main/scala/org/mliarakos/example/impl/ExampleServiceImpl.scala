@@ -12,7 +12,8 @@ import scala.util.Random
 class ExampleServiceImpl extends ExampleService {
 
   override def greeting = ServerServiceCall { _ =>
-    Future.successful(s"Welcome!")
+    val id = com.app.utils.Utils.getSimpleUID
+    Future.successful(s"Welcome! $id")
   }
 
   override def hello(name: String) = ServerServiceCall { _ =>

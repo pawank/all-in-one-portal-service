@@ -1,2 +1,3 @@
 GET     /                   controllers.Main.index
+GET     /home                   controllers.Main.home
 GET     /assets/*file       controllers.Assets.at(file)

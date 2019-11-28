@@ -9,4 +9,8 @@ class Main(components: ControllerComponents, environment: Environment) extends A
     Ok(views.html.main(environment.mode))
   }
 
+  def home = Action {
+    Ok(views.html.main(environment.mode))
+  }
+
 }

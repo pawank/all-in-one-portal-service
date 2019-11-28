@@ -7,9 +7,10 @@ import org.mliarakos.example.api.ExampleService
 import org.scalajs.dom.window
 
 class ExampleClientApplication(hostname: String = window.location.hostname)
-    extends LagomClientApplication("example-client")
+    extends LagomClientApplication("portal-client")
     with StaticServiceLocatorComponents {
-  override def staticServiceUri: URI = URI.create(s"http://$hostname:58440")
+
+  override def staticServiceUri: URI = URI.create(s"http://$hostname:56704")
 }
 
 object ExampleClient {
